@@ -1,0 +1,286 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: callibri, sans-serif;
+}
+body{
+    font-family: callibri, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url("Gaming Website/images/background pics/ps5.jpeg");
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#gallery{
+    display: flex;
+    width: calc(250px * 8);
+    margin: 10px;
+    padding: 10px;
+
+    animation: loopSlider 15s linear infinite;
+}
+
+#gallery img{
+    width: 250px;
+    height: 200px;
+
+    object-fit: cover;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+@keyframes loopSlider{
+
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(-250px * 4));
+    }
+}
+.nav {
+    display: flex;
+    color:rgb(69, 230, 6);
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding: 10px 0;
+    font-family: callibri, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 24px 6px; 
+    box-shadow: 0 4px rgba(32, 32, 32, 0.2);
+
+    background-color: #080a63;
+    padding: 10px 0;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover{
+    color: lightgray;
+}
+#button{
+    background-color: rgb(20, 3, 116);
+    color: white;
+    border: 1px solid #080a63;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#button:hover{
+    background-color: rgb(37, 31, 77);
+    color: rgb(247, 247, 247);
+}
+
+h1 {
+    font-size: 60px;
+    color: #080a63;
+    text-align: center;
+    padding: 0px;
+    margin: 30px;
+    font-family: callibri, sans-serif;
+    font-weight: bold SOLID;
+    FONT-SIZE: 70PX;
+}
+h4{
+    text-align: center;
+    color: #080a63;
+    font-size: 16px;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 350px;
+    font-family: callibri, sans-serif;
+}
+thead{
+    background-color: #080a63;
+    color: white;
+    text-align: center;
+    font-family: callibri, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+footer{
+    background-color: rgb(42, 32, 109);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: callibri, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+  
+    .box-shadow: 0 4px rgba(32, 32, 32, 0.2);
+}
+.aboutUs{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: rgba(59, 19, 204, 0.932);
+}
+.booking-form{
+    position: relative;
+    width: 400px;
+    padding: 50px 40px;
+    background: linear-gradient(45deg, #09106b, #6e8ff3);
+    border-radius: 16px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 40px 50px  rgba(0, 0, 0, 0);
+    z-index: 10;
+}
+input[type="text"], input[type="email"], textarea{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: callibri, sans-serif;
+}
+input[type="submit"]{
+    background-color: rgb(20, 3, 116);
+    color: white;
+    border: 1px solid #080a63;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input[type="submit"]:hover{
+    background-color:  #6e8ff3;
+    color: rgb(247, 247, 247);
+}
+.gamesList input{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: callibri, sans-serif;
+}               
+#games-offered, .top-games{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #024c6e;
+    border-radius: 5px;
+    font-family: callibri, sans-serif;
+    background-color: #080a63;
+    color: white;
+    display: grid;
+    
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.deck{
+    position:relative;
+    width:150px;
+    height:200px;
+    cursor:pointer;
+    margin:50px;
+}
+
+.card{
+    position:absolute;
+    width:150px;
+    height:200px;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    font-weight:bold;
+    color: linear-gradient(45deg, #020b8d, #4d79ff);
+    cursor:pointer;
+    transition:0.5s;
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* STACKED POSITION */
+
+.c1{ background: linear-gradient(45deg, #020b8d, #4d79ff); }
+.c2{ background: linear-gradient(45deg, #020b8d, #4d79ff); }
+.c3{ background: linear-gradient(45deg, #020b8d, #4d79ff); }
+.c4{ background: linear-gradient(45deg, #020b8d, #4d79ff); }
+.c5{ background: linear-gradient(45deg, #020b8d, #4d79ff); }
+
+/* OPEN ON HOVER */
+
+.deck:hover .c1{
+    transform:translateX(-240px) rotate(-25deg);
+}
+
+.deck:hover .c2{
+    transform:translateX(-120px) rotate(-12deg);
+}
+
+.deck:hover .c4{
+    transform:translateX(120px) rotate(12deg);
+}
+
+.deck:hover .c5{
+    transform:translateX(240px) rotate(25deg);
+}
+
+/* CLICK EFFECT */
+
+.card.active{
+    transform:translateX(0) scale(1.05) !important;
+    z-index:100 !important;
+}
